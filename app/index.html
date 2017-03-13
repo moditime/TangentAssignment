@@ -16,8 +16,8 @@
           <div ng-controller="ProjectCtrl">
     <input type="text" placeholder="Username" ng-model="username" /> <br><br>       
     <input type="password" placeholder="Password" ng-model="password" />   <br><br>
-    <a class="btn btn-success" ng-click="login()">Sign In</a>
-</div>
+    <a ui-sref="show.Project" class="btn btn-success" ng-click="login()">Sign In</a>
+    </div>
 <br>
 <img src="images/yeoman.png" alt="Smiley face" height="62" width="62">
           </fieldset>
@@ -53,6 +53,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -61,6 +62,7 @@
        
         <script src="scripts/controllers/project.js"></script>
         <script src="scripts/services/project.js"></script>
+        <script src="scripts/controllers/projectlist.js"></script>
         <!-- endbuild -->
 </body>
 </html>
