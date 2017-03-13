@@ -1,0 +1,43 @@
+
+<html>
+    <head></head>
+    <body ng-app="tanAppApp">
+<div >
+<div ng-controller="project">
+
+<table>
+    <tr>
+        <th>name</th>
+
+        <th>Description</th>
+        <th>Start date</th>
+        <th>End Date</th>
+        <th>Is Billable</th>
+        <th>Is Active</th>
+        <th>Created</th>
+        <th>Add</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <tr ng-repeat="item in project_json">
+        <td>{{item.title}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.start_date}}</td>
+        <td>{{item.end_date}}</td>
+         <td>{{item.is_billable}}</td>
+        <td>{{item.is_active}}</td>
+        <td>{{item.start_date}}</td>
+
+         <td><a class="btn btn-success">Add</a></td>
+        <td><a class="btn btn-primary">Edit</a></td>
+        <td><a class="btn btn-danger">Delete</a></td>
+    </tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
