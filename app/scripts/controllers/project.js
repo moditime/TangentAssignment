@@ -26,12 +26,12 @@ angular.module('tanAppApp',['ui.router'])
 
               console.log("Project Json",response.data);   
 
-           //window.location.href = 'views/list.html';
+           window.location.href = 'views/list.html';
            $scope.project_json=response.data;
            $scope.name="Moditime";
 
            console.log("Array",$scope.project_json);
-           $state.go('show.Project');
+           $state.go('views/list.html');
           
          })
    })
